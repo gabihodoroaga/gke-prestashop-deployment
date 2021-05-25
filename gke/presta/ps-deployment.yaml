@@ -52,6 +52,9 @@ spec:
           - name: ps-server-volume
             mountPath: /var/www/html/config/xml
             subPath: config/xml
+          - name: ps-server-volume
+            mountPath: /var/lib/php/sessions
+            subPath: sessions
       - name: cloud-sql-proxy
         image: gcr.io/cloudsql-docker/gce-proxy:1.17
         command:
