@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: server-psweb
-        image: gcr.io/${PROJECT_ID}/mypresta
+        image: gcr.io/${PROJECT_ID}/mypresta:1.0.1
         ports:
           - name: http
             containerPort: 80
